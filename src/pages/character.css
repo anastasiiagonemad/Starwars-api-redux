@@ -1,0 +1,57 @@
+.character__card {
+    display: grid;
+    place-content: center;
+}
+
+.character__card-title h1 {
+    font-family: "Title", sans-serif;
+    color: white;
+    word-spacing: 10px;
+    font-size: 3em;
+}
+
+.character__card-description {
+    place-self: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 1px 10px 6px rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.character__card-description p {
+    text-align: center;
+    color: blue;
+    font-family: "Untitle", sans-serif;
+    font-size: 1.5em;
+}
+
+.character__card-description span {
+    color: white;
+}
+
+.character__card-returnBtn {
+    margin-top: 10rem;
+    place-self: center;
+}
+.character__card-returnBtn-btn {
+    background-color: white;
+    border: none;
+    box-shadow: 2px 1px 10px 6px rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-family: "Text", sans-serif;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+}
+
+.character__card-returnBtn-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .character__card-title h1 {
+        font-size: 1.5em;
+    }
+}

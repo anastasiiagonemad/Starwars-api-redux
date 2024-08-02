@@ -1,0 +1,80 @@
+.characters__cards {
+    display: grid;
+    place-content: center;
+}
+
+.characters__cards-title h1 {
+    font-family: "Title", sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+.characters__cards-input input {
+    width: 100%;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    box-shadow: 2px 1px 10px 5px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.characters__cards-input input::placeholder {
+    color: white;
+}
+
+.characters__cards-status {
+    margin-top: 2rem;
+    font-size: 1.275rem;
+    color: white;
+    text-align: center;
+}
+
+.characters__cards-status p {
+    font-family: "Text", sans-serif;
+}
+
+.characters__cards-list {
+    margin-top: 2rem;
+    place-self: left;
+    display: grid;
+}
+
+.characters__cards-list-name {
+    color: white;
+    line-height: 2;
+    font-size: 1.275em;
+    margin-left: -2rem;
+}
+
+.characters__cards-list-name:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.characters__cards-buttons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.characters__cards-buttons button {
+    background-color: white;
+    border: none;
+    box-shadow: 2px 1px 10px 6px rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-family: "Text", sans-serif;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+}
+
+.characters__cards-buttons button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .characters__cards-title h1 {
+        font-size: 1.5em;
+    }
+}
