@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dd773793.css",
+    "main.js": "/static/js/main.7ca9dad9.js",
+    "static/media/starwars.jpg": "/static/media/starwars.069f302e1c16024257f9.jpg",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/HomeVideo-Regular.otf": "/static/media/HomeVideo-Regular.ed00fb68e6aa780e42be.otf",
+    "static/media/DeathStar-VmWB.ttf": "/static/media/DeathStar-VmWB.4fe76636d2bf8f577a2c.ttf",
+    "index.html": "/index.html",
+    "main.dd773793.css.map": "/static/css/main.dd773793.css.map",
+    "main.7ca9dad9.js.map": "/static/js/main.7ca9dad9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd773793.css",
+    "static/js/main.7ca9dad9.js"
+  ]
+}
