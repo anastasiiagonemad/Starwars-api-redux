@@ -10,7 +10,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<CharactersList />} />
+          <Route path="/Starwars-api-redux" element={<CharactersList />} />
           <Route path="/character/:name" element={<CharacterDetails />} />
         </Routes>
       </Router>
