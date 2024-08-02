@@ -55,8 +55,28 @@
     display: flex;
     justify-content: space-between;
 }
-
-.characters__cards-buttons button {
+.characters__cards-buttons-page-active {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-family: "Text", sans-serif;
+    transform: translateY(-15%);
+}
+.characters__cards-buttons-page {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.characters__cards-buttons-page:hover {
+    color: blue;
+    font-size: 2em;
+    transition: 0.2s ease-in;
+    transform: translateY(-15%);
+}
+.characters__cards-buttons-btn {
     background-color: white;
     border: none;
     box-shadow: 2px 1px 10px 6px rgba(255, 255, 255, 0.3);
@@ -68,7 +88,7 @@
     cursor: pointer;
 }
 
-.characters__cards-buttons button:hover {
+.characters__cards-buttons-btn:hover {
     background-color: black;
     color: white;
 }

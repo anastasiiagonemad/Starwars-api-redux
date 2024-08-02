@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import './character.css';
 
-const CharacterDetails = () => {
-  const { name } = useParams();
-  const [character, setCharacter] = useState(null);
-  const [loading, setLoading] = useState(true);
+interface Character {
+  name: string;
+  height: string;
+  mass: string;
+  hair_color: string;
+  skin_color: string;
+  eye_color: string;
+  birth_year: string;
+  gender: string;
+}
+
+const CharacterDetails: React.FC = () => {
+  const { name } = useParams<Record<string, string>>();
+  const [searchParams] = useSearchParams();
+  const pageFromUrl = searchParams.get('page') || '1'; // Get the page parameter from the URL
+  const [character, setCharacter] = useState<Character | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchCharacter = async () => {
@@ -59,7 +72,10 @@ const CharacterDetails = () => {
       </div>
 
       <div className="character__card-returnBtn">
-        <Link className="character__card-returnBtn-btn" to="/">
+        <Link
+          className="character__card-returnBtn-btn"
+          to={`/Starwars-api-redux?page=${pageFromUrl}`} // Include the page parameter
+        >
           Back to Characters List
         </Link>
       </div>
