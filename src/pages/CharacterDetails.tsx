@@ -17,7 +17,7 @@ interface Character {
 const CharacterDetails: React.FC = () => {
   const { name } = useParams<Record<string, string>>();
   const [searchParams] = useSearchParams();
-  const pageFromUrl = searchParams.get('page') || '1'; // Get the page parameter from the URL
+  const pageFromUrl = searchParams.get('page') || '1';
   const [character, setCharacter] = useState<Character | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -74,7 +74,7 @@ const CharacterDetails: React.FC = () => {
       <div className="character__card-returnBtn">
         <Link
           className="character__card-returnBtn-btn"
-          to={`/Starwars-api-redux?page=${pageFromUrl}`} // Include the page parameter
+          to={`/Starwars-api-redux?page=${pageFromUrl}`}
         >
           Back to Characters List
         </Link>
